@@ -1,0 +1,41 @@
+package com.luv2code.springboot.todos.exception;
+
+public class ExceptionResponses {
+    private int status;
+
+    private String message;
+
+    private long timeStamp;
+
+    public ExceptionResponses() { /* No Args */}
+
+    public ExceptionResponses(int status, String message, long timeStamp) {
+        this.status = status;
+        this.message = message;
+        this.timeStamp = timeStamp;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public long getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setTimeStamp(long timeStamp) {
+        this.timeStamp = timeStamp;
+    }
+}
